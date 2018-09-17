@@ -7,7 +7,7 @@ namespace Transform{
     public static class Transform {
         public static int[] Map(this int[] a,Ddouble synt){
             for (int i = 0; i < a.Length; i++){
-                a[i]=synt(a[i]);
+                a[i]=synt(a[i]);    //To trigger the linked method of delegate
             }
             return a;
         }
